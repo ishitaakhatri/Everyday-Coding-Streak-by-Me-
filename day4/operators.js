@@ -43,4 +43,25 @@ console.log(true&&true)
 console.log(false&&true)
 console.log(true&&false)
 console.log(false&&false)
+//NOT operator
+console.log("using the not operator")
+console.log(!true)
+console.log(!false)
+//NULL COALESCING operator(??)
+//if there is a null value it provides a default value
+let value=null
+let result=value ?? true
+console.log(result)
+//logical operators without boolean values
+//falsy values are 'undefined','null','emptystring','0','false'other than that are truthy
+let userchosencolour='blue'
+let defaultcolour='green'
+let preferdcolour=''
+
+console.log(userchosencolour||defaultcolour)
+console.log(userchosencolour&&defaultcolour)
+console.log(userchosencolour||preferdcolour)
+console.log(userchosencolour&&preferdcolour)
+
+
 
