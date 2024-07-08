@@ -42,4 +42,24 @@ logged_in=True
 if user=='admin' and logged_in:
  print("user is valid")
 else:
- print("user is invalid") 
+ print("user is invalid")
+ #or statement
+print("trying with or") 
+user='admin'
+logged_in=True
+if user=='admin' or logged_in:
+ print("user is valid")
+else:
+ print("user is invalid")
+#not statement
+if not logged_in:
+ print("please login")
+else:
+  print("welcome")
+#id checking by (is)
+a=[1,2,3]
+b=[1,2,3]
+print(a == b)
+print(id(a))
+print(id(b))
+print(a is b)
