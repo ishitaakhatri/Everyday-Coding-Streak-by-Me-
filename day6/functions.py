@@ -14,5 +14,7 @@ def greetings(name,course):
 
 greetings('ishita','btech')      
 #passing a default argument 
-def hi_there(name='cheeki'):
-    
+def hi_there(course,name='cheeki'):
+    print('hi,{} welcome to {}.'.format(name,course))
+
+hi_there('science')
