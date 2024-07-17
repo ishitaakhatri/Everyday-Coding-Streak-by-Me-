@@ -19,7 +19,7 @@ numbers=[1,2,3,4,5,6,7,8]
 #while loop
 
 num=0
-while(num<=10):
+while(num <= 10):
  if num==3:
   continue
  if num==8:
