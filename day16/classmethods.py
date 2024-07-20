@@ -9,11 +9,16 @@ class employee:
         return(f'{self.first} {self.last}')
     def apply_raise(self):
         self.pay = int(self.pay * self.raise_amount)
-        
+
+    @classmethod
+    def set_raise_rate(cls,amount):
+        cls.raise_amount = amount
+
 emp_1 = employee('ishita','khatri',54000)
 emp_2 = employee('akshat','khatri',50000)
 
-emp_1.raise_amount = 1.05#only changing for emp_1
+# emp_1.raise_amount = 1.05#only changing for emp_1
+employee.set_raise_rate(1.05)
 
 print(emp_1.raise_amount)
 print(emp_2.raise_amount)
