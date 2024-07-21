@@ -13,7 +13,12 @@ class employee:
     @classmethod
     def set_raise_rate(cls,amount):
         cls.raise_amount = amount
-
+    @staticmethod
+    def working_day(day):
+        if day.weekday() == 5 or day.weekday() == 6 :
+            return False
+        return True
+    
 emp_1 = employee('ishita','khatri',54000)
 emp_2 = employee('akshat','khatri',50000)
 
@@ -23,3 +28,8 @@ employee.set_raise_rate(1.05)
 print(emp_1.raise_amount)
 print(emp_2.raise_amount)
 print(employee.raise_amount)
+
+import datetime
+
+my_date = datetime.date.today()
+print(employee.working_day(my_date))
