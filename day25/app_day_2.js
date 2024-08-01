@@ -3,7 +3,6 @@
 
 const unordered_list = document.querySelector('ul');
 const list_item = document.createElement('li');
-
 //adding the element 
 unordered_list.append(list_item);
 // modifying element 
